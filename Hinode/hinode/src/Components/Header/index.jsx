@@ -1,9 +1,10 @@
-import { StyledHeaderAll, StyledContainerTopHeader,StyledH4,StyledConsultor,StyledContainerMiddleHeader,StyledNav,StyledLinkNav } from "./style";
+import { StyledHeaderAll, StyledContainerTopHeader,StyledH4,StyledConsultor,StyledContainerMiddleHeader,StyledContainerInput,StyledInput,StyledContainerUser,StyledNav,StyledCategory,StyledLinkNav } from "./style";
 import { BsPersonFill } from "react-icons/bs";
 import { AiOutlineHeart } from "react-icons/ai";
 import { BsBagFill } from "react-icons/bs";
 import {GoSearch} from "react-icons/go"
 import {AiOutlineMenu} from "react-icons/ai"
+import {AiOutlineUser} from "react-icons/ai"
 import Hinode from "../../assets/Hinode.svg";
 
 function Header() {
@@ -17,22 +18,25 @@ function Header() {
       </StyledContainerTopHeader>
       <StyledContainerMiddleHeader>
         <img src={Hinode} alt="logo hinode" />
-    <div>
-       <input type="search" placeholder="Busque aqui seu produto de interesse"/>
+    <StyledContainerInput>
+       <StyledInput type="search" placeholder="Busque aqui seu produto de interesse"/>
        <a href="#"><GoSearch/></a>
-    </div>
+    </StyledContainerInput>
+    <StyledContainerUser>
+    <AiOutlineUser/>
         <p>Olá Visitante</p>
         <p>ENTRE OU CADASTRE-SE</p>
+    </StyledContainerUser>
         <AiOutlineHeart />
         <p>FAVORITOS</p>
         <BsBagFill />
         <p>SACOLA</p>
       </StyledContainerMiddleHeader>
       <StyledNav>
-        <a href="#">
+        <StyledCategory href="#">
           <AiOutlineMenu />
           Todas as categorias
-        </a>
+        </StyledCategory>
         <StyledLinkNav href="#">FRAGRÂNCIAS</StyledLinkNav>
         <StyledLinkNav href="#">MAQUIAGEM</StyledLinkNav>
         <StyledLinkNav href="#">CORPO & BANHO</StyledLinkNav>
