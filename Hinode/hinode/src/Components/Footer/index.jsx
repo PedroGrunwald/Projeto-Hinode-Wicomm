@@ -3,7 +3,7 @@ import Alert from "../../assets/AlertHinode.svg"
 import {BsInstagram} from "react-icons/bs"
 import {ImFacebook} from "react-icons/im"
 import {RiYoutubeLine} from "react-icons/ri"
-import {StyledFooter,StyledSectiontop,StyledForm,StyledInput,StyledButton} from "./style"
+import {StyledFooter,StyledSectiontop,StyledForm,StyledInput,StyledButton,StyledSectionCenter,StyledContainerCenter,StyledNavCenter,StyledListFirst,StyledList,StyledLiBtn,StyledParagrahy,StyledContainerSocial} from "./style"
 
 const Footer = () => {
   return (
@@ -16,48 +16,47 @@ const Footer = () => {
           <StyledButton type="submit">CADASTRAR</StyledButton>
         </StyledForm>
       </StyledSectiontop>
-<section>
-    <div>
-        <nav>
-            <li>GRUPO HINODE</li>
-            <li>A EMPRESA</li>
-            <li>Catalogo Hinode</li>
-            <li>Seja um consultor</li>
-            <li>Hinode Prime</li>
-            <li>Frete inteligente</li>
-        </nav>
+<StyledSectionCenter>
+    <StyledContainerCenter>
+        <StyledNavCenter>
+            <StyledListFirst>GRUPO HINODE</StyledListFirst>
+            <StyledList>A EMPRESA</StyledList>
+            <StyledList>Catalogo Hinode</StyledList>
+            <StyledList>Seja um consultor</StyledList>
+            <StyledList>Hinode Prime</StyledList>
+            <StyledList>Frete inteligente</StyledList>
+        </StyledNavCenter>
 
-        <nav>
-            <li>MAIS VENDIDOS</li>
-            <li>Corps Lígnea Body Contour Gel Modelador</li>
-            <li>Shake de Vanilla H+ HND</li>
-            <li>Shake de Morango H+ HND</li>
-            <li>Luva de Silicone Creme para as Mãos Hands</li>
-            <li>Empire Gold</li>
-            <li>Empire VIP</li>
-        </nav>
+        <StyledNavCenter>
+            <StyledListFirst>MAIS VENDIDOS</StyledListFirst>
+            <StyledList>Corps Lígnea Body Contour Gel Modelador</StyledList>
+            <StyledList>Shake de Vanilla H+ HND</StyledList>
+            <StyledList>Shake de Morango H+ HND</StyledList>
+            <StyledList>Luva de Silicone Creme para as Mãos Hands</StyledList>
+            <StyledList>Empire Gold</StyledList>
+            <StyledList>Empire VIP</StyledList>
+        </StyledNavCenter>
 
-        <nav>
-            <li>DÚVIDAS FREQUENTES</li>
-            <li>Fale Conosco</li>
-            <li>Entrega, Trocas e Devoluções</li>
-            <li>Compra e Venda</li>
-            <li>Política de Privacidade</li>
-            <li>Remover Consentimento</li>
-        </nav>
+        <StyledNavCenter>
+            <StyledListFirst>DÚVIDAS FREQUENTES</StyledListFirst>
+            <StyledList>Fale Conosco</StyledList>
+            <StyledList>Entrega, Trocas e Devoluções</StyledList>
+            <StyledList>Compra e Venda</StyledList>
+            <StyledList>Política de Privacidade</StyledList>
+            <StyledList>Remover Consentimento</StyledList>
+        </StyledNavCenter>
 
-        <nav>
-            <li><button>CENTRAL DE ATENDIMENTO</button></li>
-            <li><p>De segunda a sexta das 9h às 21h Capitas e regiões metropolitanas 4020-2424 Demais localidades: 0800-144-6633</p></li>
-            <li></li>
-         <div>
+        <StyledNavCenter>
+            <StyledLiBtn>CENTRAL DE ATENDIMENTO</StyledLiBtn>
+            <StyledParagrahy>De segunda a sexta das 9h às 21h Capitas e regiões metropolitanas 4020-2424 Demais localidades: 0800-144-6633</StyledParagrahy>
+         <StyledContainerSocial>
             <BsInstagram/>
             <RiYoutubeLine/>
             <ImFacebook/>
-         </div>
-        </nav>
-    </div>
-</section>
+         </StyledContainerSocial>
+        </StyledNavCenter>
+    </StyledContainerCenter>
+</StyledSectionCenter>
 <img src={Alert} alt="regras hinode" />
     </StyledFooter>
   );
